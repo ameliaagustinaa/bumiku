@@ -5,6 +5,7 @@ import { NavBar } from "./components/NavBar";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { HomeCard } from "./components/HomeCard";
+import { Words } from "./components/Words";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -15,6 +16,9 @@ function App() {
       <Hero />
       <br />
       <HomeCard />
+      <br />
+      <br />
+      <Words />
       <br />
       <Footer />
     </div>

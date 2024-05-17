@@ -102,3 +102,26 @@
     }
   }
 }
+
+.words {
+  font-family: "Montserrat", sans-serif;
+  background-color: #03361e;
+  color: #fff;
+  height: 195px;
+  display: grid;
+  align-items: end;
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 40px;
+  }
+
+  .watermark {
+    h4 {
+      font-size: 20px;
+      padding-bottom: 20px;
+      padding-right: 50px;
+    }
+  }
+}
