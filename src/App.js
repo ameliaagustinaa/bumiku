@@ -7,6 +7,8 @@ import { Hero } from "./components/Hero";
 import { HomeCard } from "./components/HomeCard";
 import { Words } from "./components/Words";
 import { Earth } from "./components/Earth";
+import { Info } from "./components/Info";
+import { AboutBumiku } from "./components/AboutBumiku";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -14,17 +16,6 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Hero />
-      <br />
-      <HomeCard />
-      <br />
-      <br />
-      <Words />
-      <br />
-      <br />
-      <Earth />
-      <br />
-      <Footer />
     </div>
   );
 }

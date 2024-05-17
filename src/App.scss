@@ -153,7 +153,7 @@
     }
 
     .bumiku-content {
-      margin: 100px;
+      margin: 100px 0 100px 110px;
 
       h3 {
         font-family: "Poppins", sans-serif;
@@ -165,7 +165,72 @@
         font-family: "Montserrat", sans-serif;
         color: #818181;
         font-size: 16px;
+        padding-right: 80px;
+        margin-bottom: 20px;
       }
     }
+  }
+}
+
+.bumiku-info {
+  background-color: #03361e;
+  padding: 80px 0;
+  .info-title {
+    font-family: "Montserrat", sans-serif;
+    p {
+      color: #bfbebe;
+    }
+    h3 {
+      font-weight: 600;
+      color: #a8db98;
+      font-size: 24px;
+    }
+  }
+
+  .info-card {
+    .card-item {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      h4 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.about-container {
+  background-color: #03361e;
+  color: #fff;
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #bfbebe;
+  }
+
+  h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  img {
+    width: 650px;
+    height: 390px;
   }
 }

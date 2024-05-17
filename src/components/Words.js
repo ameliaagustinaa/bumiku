@@ -1,14 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 
-export const Words = () => {
+export const Words = (props) => {
+  console.log(props);
   return (
     <Container className="words">
       <Row>
         <Col>
-          <h3>
-            "Lingkungan yang bersih adalah budaya orang yang memiliki pola pikir
-            maju."
-          </h3>
+          <h3>{props.words}</h3>
         </Col>
       </Row>
       <Row className="text-end watermark">
