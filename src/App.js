@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 import { HomeCard } from "./components/HomeCard";
 import { Words } from "./components/Words";
+import { Earth } from "./components/Earth";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,6 +20,9 @@ function App() {
       <br />
       <br />
       <Words />
+      <br />
+      <br />
+      <Earth />
       <br />
       <Footer />
     </div>

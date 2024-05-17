@@ -9,22 +9,21 @@
     font-weight: 500;
     color: #03361e;
   }
-  .navbar-button {
-    button {
-      font-size: 14px;
-      font-weight: 600;
-      padding: 10px 30px;
-      background-color: #03361e;
+}
 
-      &:hover {
-        background-color: #204d38;
-        color: #fff;
-      }
+#button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
+  background-color: #03361e;
 
-      &:active {
-        background-color: #03361e;
-      }
-    }
+  &:hover {
+    background-color: #204d38;
+    color: #fff;
+  }
+
+  &:active {
+    background-color: #03361e;
   }
 }
 
@@ -35,6 +34,9 @@
 }
 
 #button1 {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 30px;
   background-color: transparent;
   color: #03361e;
   border-color: #03361e;
@@ -122,6 +124,36 @@
       font-size: 20px;
       padding-bottom: 20px;
       padding-right: 50px;
+    }
+  }
+}
+
+.earth-container {
+  background-image: url(./assets/images/Ellipse.png);
+  background-repeat: no-repeat;
+  background-size: 580px;
+
+  .earth-container-content {
+    height: auto;
+    .bumiku-image {
+      max-height: 427px;
+      max-width: 526px;
+    }
+
+    .bumiku-content {
+      margin: 100px;
+
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      p {
+        font-family: "Montserrat", sans-serif;
+        color: #818181;
+        font-size: 16px;
+      }
     }
   }
 }
