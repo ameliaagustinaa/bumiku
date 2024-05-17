@@ -3,6 +3,8 @@ import twitter from "../assets/images/twitter.png";
 import instagram from "../assets/images/instagram.png";
 import facebook from "../assets/images/facebook.png";
 
+// import IMAGES from "../assets/images/images.js";
+
 export const Footer = () => {
   return (
     <footer className="text-white py-5 footer">
@@ -75,6 +77,9 @@ export const Footer = () => {
                     <a>
                       <img src={twitter} />
                     </a>
+                    {/* <a>
+                      <img src={IMAGES.footer.twitter} />
+                    </a> */}
                   </Col>
 
                   <Col md={1}>

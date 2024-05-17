@@ -82,3 +82,23 @@
     }
   }
 }
+.card-home {
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #03361e;
+    margin-bottom: 30px;
+  }
+  .card-body {
+    img {
+      max-width: 270px;
+    }
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #03361e;
+      padding: 24px;
+    }
+  }
+}
