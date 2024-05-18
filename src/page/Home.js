@@ -1,16 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
-import "./App.scss";
-import { NavBar } from "./components/NavBar";
-import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
-import { HomeCard } from "./components/HomeCard";
-import { Words } from "./components/Words";
-import { Earth } from "./components/Earth";
+import "../App.css";
+import "../App.scss";
+import { NavBar } from "../components/NavBar";
+import { Footer } from "../components/Footer";
+import { Hero } from "../components/Hero";
+import { HomeCard } from "../components/HomeCard";
+import { Words } from "../components/Words";
+import { Earth } from "../components/Earth";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+export default function Home() {
   return (
     <div className="App">
       <NavBar />
@@ -34,5 +33,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

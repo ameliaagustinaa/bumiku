@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export const Info = () => {
   return (
-    <Container>
+    <Container className="p-0">
       <div className="bumiku-info">
         <Row>
           <Col md={6} className="m-auto info-title">
