@@ -17,6 +17,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./page/Home";
 import About from "./page/About";
 import Info from "./page/Info";
+import Informasi from "./page/informasi";
+import Donasi from "./page/Donasi";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <Route path="/beranda" element={<Home />} />
           <Route path="/tentang-kami" element={<About />} />
           <Route path="/bantuan" element={<Info />} />
+          <Route path="/informasi" element={<Informasi />} />
+          <Route path="/donasi" element={<Donasi />} />
         </Routes>
       </BrowserRouter>
     </div>
