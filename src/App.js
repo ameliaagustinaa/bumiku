@@ -1,5 +1,5 @@
 // import logo from "./logo.svg";
-// import "./App.css";
+import "./App.css";
 // import "./App.scss";
 // import { NavBar } from "./components/NavBar";
 // import { Footer } from "./components/Footer";
@@ -21,14 +21,21 @@ import Info from "./page/Info";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/beranda" element={<Home />} />
           <Route path="/tentang-kami" element={<About />} />
           <Route path="/bantuan" element={<Info />} />
+          <Route path="/informasi" element={<Informasi />} />
+          <Route path="/donasi" element={<Donasi />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+        {/* < Daftarlogin></Daftarlogin> */}
+        {/* < Login></Login> */}
+        <Admininformasi></Admininformasi>
+        
     </div>
   );
 }
