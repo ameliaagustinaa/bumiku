@@ -1,5 +1,5 @@
 // import logo from "./logo.svg";
-// import "./App.css";
+import "./App.css";
 // import "./App.scss";
 // import { NavBar } from "./components/NavBar";
 // import { Footer } from "./components/Footer";
@@ -17,18 +17,26 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./page/Home";
 import About from "./page/About";
 import Info from "./page/Info";
+import Daftarlogin from "./components/Daftarlogin";
+import Login from "./components/Login";
+import Admininformasi from "./components/Admininformasi";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/beranda" element={<Home />} />
           <Route path="/tentang-kami" element={<About />} />
           <Route path="/bantuan" element={<Info />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+        {/* < Daftarlogin></Daftarlogin> */}
+        {/* < Login></Login> */}
+        <Admininformasi></Admininformasi>
+        
     </div>
   );
 }
