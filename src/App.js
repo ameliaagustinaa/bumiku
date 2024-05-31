@@ -17,6 +17,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./page/Home";
 import About from "./page/About";
 import Info from "./page/Info";
+import Adminkursus from "./components/Adminkursus";
+import Admindonasi from "./components/Admindonasi";
+import Tambahinformasi from "./components/Tambahinformasi";
 
 function App() {
   return (
@@ -32,6 +35,9 @@ function App() {
           <Route path="/Login" element={<Login/>}/>
           <Route path="/Daftarlogin" element={<Daftarlogin/>}/>
           <Route path="/Admininformasi" element={<Admininformasi/>}/>
+          <Route path="/Adminkursus" element={<Adminkursus/>}/>
+          <Route path="/Admindonasi" element={<Admindonasi/>}/>
+          <Route path="/Tambahinformasi" element={<Tambahinformasi/>}/>
         </Routes>
       </BrowserRouter>        
     </div>
