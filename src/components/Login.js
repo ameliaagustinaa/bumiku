@@ -3,7 +3,7 @@ import "../App.css";
 
 function Login() {
   return (
-
+    <div className="App-daftarlogin">
         <div className='containerss'>
         <h1 className='judul'>Bumiku.com</h1>
         <form>
@@ -21,6 +21,7 @@ function Login() {
         <button className='button' type="submit">Masuk</button>
         </form>
 
+        </div>
         </div>
         );
         }

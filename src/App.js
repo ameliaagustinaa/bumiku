@@ -24,19 +24,17 @@ import Admininformasi from "./components/Admininformasi";
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/beranda" element={<Home />} />
           <Route path="/tentang-kami" element={<About />} />
           <Route path="/bantuan" element={<Info />} />
+          <Route path="/Login" element={<Login/>}/>
+          <Route path="/Daftarlogin" element={<Daftarlogin/>}/>
+          <Route path="/Admininformasi" element={<Admininformasi/>}/>
         </Routes>
-      </BrowserRouter> */}
-
-        {/* < Daftarlogin></Daftarlogin> */}
-        {/* < Login></Login> */}
-        <Admininformasi></Admininformasi>
-        
+      </BrowserRouter>        
     </div>
   );
 }
