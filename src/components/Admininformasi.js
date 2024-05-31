@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 
 function Admininformasi() {
   return (
+    
     <div className='frameadmin'>
     <div className='sidebar'>
         <h2 className='judul-sidebar'>Bumiku.com</h2>
@@ -17,7 +18,7 @@ function Admininformasi() {
     </div>
     
     <div className='tabel'>
-      <h6> Informasi </h6>
+      <h6 className='informasiadmin'> Informasi </h6>
 
       <Table striped bordered hover>
       <thead>
@@ -59,7 +60,6 @@ function Admininformasi() {
     <button className='butonadmin' type="submit">Tambahkan</button>
     </div>
     </div>
-    
   );
 }
 

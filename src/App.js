@@ -21,7 +21,7 @@ import Info from "./page/Info";
 function App() {
   return (
     <div className="App">
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
           <Route path="/beranda" element={<Home />} />
@@ -29,13 +29,11 @@ function App() {
           <Route path="/bantuan" element={<Info />} />
           <Route path="/informasi" element={<Informasi />} />
           <Route path="/donasi" element={<Donasi />} />
+          <Route path="/Login" element={<Login/>}/>
+          <Route path="/Daftarlogin" element={<Daftarlogin/>}/>
+          <Route path="/Admininformasi" element={<Admininformasi/>}/>
         </Routes>
-      </BrowserRouter> */}
-
-        {/* < Daftarlogin></Daftarlogin> */}
-        {/* < Login></Login> */}
-        <Admininformasi></Admininformasi>
-        
+      </BrowserRouter>        
     </div>
   );
 }
