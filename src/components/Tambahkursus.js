@@ -1,7 +1,7 @@
 import Nav from 'react-bootstrap/Nav';
 import "../App.css";
 
-function Tambahinformasi() {
+function Tambahkursus() {
   return (
     
     <div className='frameadmin'>
@@ -17,11 +17,11 @@ function Tambahinformasi() {
     </div>
 
     <div className='containersss'>
-      <h1 className='judul'>Menambahkan Informasi</h1>
+      <h1 className='judul'>Menambahkan Kursus</h1>
       <br></br>
       <form>
       <label className='texttambah'>
-        Judul Informasi:
+        Judul Vidio:
         <br></br>
        <input className='inputtambah' type="text"/>
       </label>
@@ -30,17 +30,10 @@ function Tambahinformasi() {
       <label className='texttambah'>
         Deskripsi: 
         <br></br>
-       <input className='inputtambah' type="text"/>
-      </label>
-      <br></br>
-      <br></br>
-      <label className='texttambah'>
-        Konten Informasi: 
-        <br></br>
        <input className='konten' type="text"/>
       </label>
     
-      <p className='uploudgambar'><a className='uploudgambar' href=''>Upload File Gambar</a></p>
+      <p className='uploudgambar'><a className='uploudgambar' href=''>Upload vidio kursus</a></p>
       <button className='buttonn' type="submit">Tambahkan</button>
       </form>
       
@@ -49,6 +42,6 @@ function Tambahinformasi() {
   );
 }
 
-export default Tambahinformasi;
+export default Tambahkursus;
 
 
