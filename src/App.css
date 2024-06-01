@@ -160,11 +160,64 @@ label {
 }
 .informasiadmin{
   text-align: left;
+  font-weight: bold;
 }
 th {
   font-size: 12px;
 }
 td {
   font-size: 12px;
+  text-align: left;
+}
+
+/* Menambahkan informasi */
+.containersss {
+  background-color: white;
+  padding-top: 95px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 25px;
+  font-size: 15px;
+  
+  
+}
+
+.konten {
+  padding-top: 140px;
+  border-radius: 10px;
+  padding-right: 400px;
+}
+.inputtambah {
+  padding-right: 400px;
+}
+.buttonn {
+  text-align: center;
+  background-color: #03361E;
+  color: white;
+  width: 100px;
+  border-radius: 50px;
+  margin-left: 310px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.judul {
+  font-size: medium;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-weight: bold;
+}
+.texttambah {
+  text-align: left;
+  font-size: 15px;
+}
+
+.uploudgambar {
+  
+  font-weight: bold;
+  color: #03361E;
   text-align: left;
 }

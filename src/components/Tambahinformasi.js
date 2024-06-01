@@ -16,26 +16,32 @@ function Tambahinformasi() {
         </Nav> 
     </div>
 
-    <div className='containerss'>
-      <h1 className='judul'>Bumiku.com</h1>
+    <div className='containersss'>
+      <h1 className='judul'>Menambahkan Informasi</h1>
+      <br></br>
       <form>
-      <label>
-        Judul Informasi: <br></br>
-       <input type="text"/>
+      <label className='texttambah'>
+        Judul Informasi:
+        <br></br>
+       <input className='inputtambah' type="text"/>
       </label>
       <br></br>
-      <label>
-        Deskripsi: <br></br>
-       <input type="text"/>
+      <br></br>
+      <label className='texttambah'>
+        Deskripsi: 
+        <br></br>
+       <input className='inputtambah' type="text"/>
       </label>
       <br></br>
-      <label>
-        Konten Informasi: <br></br>
-       <input type="text"/>
+      <br></br>
+      <label className='texttambah'>
+        Konten Informasi: 
+        <br></br>
+       <input className='konten' type="text"/>
       </label>
     
-      <p><a className='masuk' href=''>Upload File Gambar</a></p>
-      <button className='button' type="submit">Daftar</button>
+      <p className='uploudgambar'><a className='uploudgambar' href=''>Upload File Gambar</a></p>
+      <button className='buttonn' type="submit">Tambahkan</button>
       </form>
       
     </div>

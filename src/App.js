@@ -20,6 +20,7 @@ import Info from "./page/Info";
 import Adminkursus from "./components/Adminkursus";
 import Admindonasi from "./components/Admindonasi";
 import Tambahinformasi from "./components/Tambahinformasi";
+import Tambahkursus from "./components/Tambahkursus";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/Adminkursus" element={<Adminkursus/>}/>
           <Route path="/Admindonasi" element={<Admindonasi/>}/>
           <Route path="/Tambahinformasi" element={<Tambahinformasi/>}/>
+          <Route path="/Tambahkursus" element={<Tambahkursus/>}/>
         </Routes>
       </BrowserRouter>        
     </div>
