@@ -2,6 +2,7 @@ import { Container, Row, Col, Navbar, Image } from "react-bootstrap";
 import twitter from "../assets/images/twitter.png";
 import instagram from "../assets/images/instagram.png";
 import facebook from "../assets/images/facebook.png";
+import { Link } from "react-router-dom";
 
 // import IMAGES from "../assets/images/images.js";
 
@@ -33,19 +34,19 @@ export const Footer = () => {
               <h5>Komunitas</h5>
               <ul className="list-unstyled link-list">
                 <li>
-                  <a href="#home" className="text-white">
+                  <Link to="/tentang-kami" className="text-white">
                     Tentang Kami
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#about" className="text-white">
+                  <Link href="#about" className="text-white">
                     Informasi
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="text-white">
+                  <Link to="/bantuan" className="text-white">
                     Pusat Bantuan
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </Col>
@@ -53,19 +54,19 @@ export const Footer = () => {
               <h5>Layanan</h5>
               <ul className="list-unstyled link-list">
                 <li>
-                  <a href="#home" className="text-white">
+                  <Link to={"/donasi"} className="text-white">
                     Donasi
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#about" className="text-white">
+                  <Link href="#about" className="text-white">
                     Kursus Daur Ulang
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="text-white">
+                  <Link href="#contact" className="text-white">
                     Pusat Berita Lingkungan
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </Col>
@@ -74,23 +75,23 @@ export const Footer = () => {
               <Col md={6}>
                 <Row className="d-flex justify-content-between">
                   <Col md={1}>
-                    <a>
+                    <Link>
                       <img src={twitter} />
-                    </a>
-                    {/* <a>
+                    </Link>
+                    {/* <Link>
                       <img src={IMAGES.footer.twitter} />
-                    </a> */}
+                    </Link> */}
                   </Col>
 
                   <Col md={1}>
-                    <a>
+                    <Link>
                       <img src={instagram} />
-                    </a>
+                    </Link>
                   </Col>
                   <Col md={1}>
-                    <a>
+                    <Link>
                       <img src={facebook} />
-                    </a>
+                    </Link>
                   </Col>
                 </Row>
               </Col>

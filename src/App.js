@@ -24,6 +24,8 @@ import Adminkursus from "./components/Adminkursus";
 import Admindonasi from "./components/Admindonasi";
 import Tambahinformasi from "./components/Tambahinformasi";
 import Tambahkursus from "./components/Tambahkursus";
+import Informasi from "./page/informasi";
+import Donasi from "./page/Donasi";
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
           <Route path="/Admindonasi" element={<Admindonasi/>}/>
           <Route path="/Tambahinformasi" element={<Tambahinformasi/>}/>
           <Route path="/Tambahkursus" element={<Tambahkursus/>}/>
+          <Route path="/informasi" element={<Informasi />} />
+          <Route path="/donasi" element={<Donasi />} />
         </Routes>
       </BrowserRouter>        
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Breadcrumb = ({ items, separatorIcon = faChevronRight }) => {
@@ -11,12 +12,12 @@ export const Breadcrumb = ({ items, separatorIcon = faChevronRight }) => {
           <React.Fragment key={index}>
             {index !== items.length - 1 ? (
               <>
-                <a
-                  href="#"
+                <Link
+                  to={"/"}
                   style={{ textDecoration: "none", color: "#03361e" }}
                 >
                   {item}
-                </a>
+                </Link>
                 <FontAwesomeIcon
                   icon={separatorIcon}
                   className="mx-2 pt-1"
