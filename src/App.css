@@ -62,27 +62,29 @@
   padding-left: 35px;
   padding-right: 35px;
   border-radius: 25px;
-  
-  
 }
+.inputlogin {
+  padding-right: 290px;
+}
+
 .masuk {
   text-decoration: none;
   font-weight: bold;
   color: #03361E;
 }
-.judul {
+.judulbumiku {
   text-align: center;
   color: #03361E;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
+  font-weight: bold;
 }
 .button {
   text-align: center;
   background-color: #03361E;
   color: white;
-  width: 250px;
+  width: 302px;
   border-radius: 50px;
-
   
 }
 input {
@@ -136,6 +138,8 @@ label {
 }
 .flex-column {
   text-align: left;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* tabel */
@@ -213,6 +217,7 @@ td {
 .texttambah {
   text-align: left;
   font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 .uploudgambar {

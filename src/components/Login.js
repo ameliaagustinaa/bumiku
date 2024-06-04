@@ -5,16 +5,16 @@ function Login() {
   return (
     <div className="App-daftarlogin">
         <div className='containerss'>
-        <h1 className='judul'>Bumiku.com</h1>
+        <h1 className='judulbumiku'>Bumiku.com</h1>
         <form>
         <label>
         Email: <br></br>
-        <input type="email"/>
+        <input className='inputlogin' type="email"/>
         </label>
         <br></br>
         <label>
         Kata Sandi: <br></br>
-        <input type="text"/>
+        <input className='inputlogin' type="text"/>
         </label>
         <br></br>
         <p>Belum memiliki akun? <a className='masuk' href=''>Daftar sekarang</a></p>
