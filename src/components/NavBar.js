@@ -22,7 +22,7 @@ export const NavBar = () => {
             <Button className=" rounded-pill outline-primary" id="button1">
               Daftar
             </Button>
-            <Button variant="dark" className="rounded-pill" id="button">
+            <Button as={Link} to="/Login" variant="dark" className="rounded-pill" id="button">
               Masuk
             </Button>
           </div>
