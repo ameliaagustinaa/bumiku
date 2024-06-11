@@ -3,7 +3,7 @@ import { Navbar, Nav, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = () => {
     setIsLoggedIn(true);

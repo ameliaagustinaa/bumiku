@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../App.css';
 
@@ -7,20 +7,19 @@ function Daftarlogin() {
   const [values, setValues] = useState({
     name: '',
     email: '',
-    password: ''
+    password: '',
+    setPassword: ''
   });
 
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:3002/daftarlogin', values)
+    axios.post('/add_user', values)
       .then(res => {
-        if (res.data.Status === "Success") {
-          navigate('/login');
-        } else {
-          alert("Error");
-        }
+        
+        navigate('/Login')
+        console.log(res)
       })
       .catch(err => console.log(err));
   };
@@ -72,6 +71,8 @@ function Daftarlogin() {
               className='inputlogin'
               type="password"
               placeholder='Enter Password'
+              value={values.confPassword}
+              onChange={e => setValues({ ...values, confPassword: e.target.value })}
             />
           </label>
           <p>Sudah memiliki akun? <a className='masuk' href=''>Masuk</a></p>
