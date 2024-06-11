@@ -6,6 +6,7 @@ import gopay from "../assets/images/gopay.png";
 import dana from "../assets/images/dana.png";
 import ovo from "../assets/images/ovo.png";
 import shopeepay from "../assets/images/shopeepay.png";
+import { Link } from "react-router-dom";
 
 export const Form = () => {
   return (
@@ -140,9 +141,11 @@ export const Form = () => {
             </div>
 
             <div className="form-button my-5">
-              <Button variant="dark" className=" rounded-pill" id="button">
-                Donasi
-              </Button>
+              <Link to={"/detail-donasi"}>
+                <Button variant="dark" className=" rounded-pill" id="button">
+                  Donasi
+                </Button>
+              </Link>
             </div>
           </div>
         </Col>

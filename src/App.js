@@ -19,6 +19,10 @@ import About from "./page/About";
 import Info from "./page/Info";
 import Informasi from "./page/informasi";
 import Donasi from "./page/Donasi";
+import Kursus from "./page/Kursus";
+import Detail from "./page/InformasiDetail";
+import DonasiDetail from "./page/DonasiDetail";
+import KursusDetail from "./page/KursusDetail";
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
           <Route path="/bantuan" element={<Info />} />
           <Route path="/informasi" element={<Informasi />} />
           <Route path="/donasi" element={<Donasi />} />
+          <Route path="/kursus" element={<Kursus />} />
+          <Route path="/detail" element={<Detail />} />
+          <Route path="/detail-donasi" element={<DonasiDetail />} />
+          <Route path="/detail-kursus" element={<KursusDetail />} />
         </Routes>
       </BrowserRouter>
     </div>

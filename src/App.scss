@@ -262,6 +262,12 @@
       font-weight: 600;
       font-size: 16px;
     }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #000;
+    }
 
     .input-text {
       border: 1px solid #a8db98;
@@ -322,9 +328,6 @@
 }
 
 .card-custom {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   margin-bottom: 15px;
 
   .card-custom-item {
@@ -356,6 +359,7 @@
     }
   }
 }
+
 .tab-custom {
   .link-group {
     display: flex;
@@ -382,5 +386,21 @@
   &:active {
     border-bottom: 2px solid #03361e;
     margin-bottom: 5px;
+  }
+}
+
+.detail-donasi {
+  font-family: "Poppins", sans-serif;
+}
+
+.detail-heading {
+  font-family: "Poppins", sans-serif;
+  h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #03361e;
+  }
+  h6 {
+    color: #bfbebe;
   }
 }
