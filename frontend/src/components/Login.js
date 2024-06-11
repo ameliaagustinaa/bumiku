@@ -4,24 +4,24 @@ import { useNavigate } from 'react-router-dom';
 import "../App.css";
 
 function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [values, setValues] = useState({
+    
+    email: '',
+    password: ''
+    
+  });
+
   const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    try {
-      const response = await axios.post('/login', { email, password });
-      if (response.status === 200) {
-        // Berhasil login, arahkan pengguna ke halaman beranda atau dashboard
-        navigate('/Home');
-      } else {
-        alert("Gagal masuk. Periksa kembali email dan kata sandi Anda.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Gagal masuk. Terjadi kesalahan.");
-    }
+    axios.post('/login', values)
+      .then(res => {
+        
+        navigate('/beranda')
+        console.log(res)
+      })
+      .catch(err => console.log(err));
   };
 
   return (
@@ -34,8 +34,8 @@ function Login() {
             <input
               className='inputlogin'
               type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={values.email}
+              onChange={e => setValues({ ...values, email: e.target.value })}
             />
           </label>
           <br />
@@ -44,8 +44,8 @@ function Login() {
             <input
               className='inputlogin'
               type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={values.password}
+              onChange={(e) => setValues({...values, password: e.target.value})}
             />
           </label>
           <br />
