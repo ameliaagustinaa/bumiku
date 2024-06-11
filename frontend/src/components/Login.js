@@ -18,7 +18,7 @@ function Login() {
     axios.post('/login', values)
       .then(res => {
         
-        navigate('/beranda')
+        navigate('/BerandaLogin')
         console.log(res)
       })
       .catch(err => console.log(err));

@@ -15,6 +15,7 @@ import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./page/Home";
+import HomeLogin from "./page/HomeLogin";
 import About from "./page/About";
 import Info from "./page/Info";
 import Daftarlogin from "./components/Daftarlogin";
@@ -38,6 +39,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/beranda" element={<Home />} />
+          <Route path="/BerandaLogin" element={<HomeLogin />} />
           <Route path="/tentang-kami" element={<About />} />
           <Route path="/bantuan" element={<Info />} />
           <Route path="/Login" element={<Login/>}/>
