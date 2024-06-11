@@ -17,7 +17,7 @@ function Login() {
         <input className='inputlogin' type="text"/>
         </label>
         <br></br>
-        <p>Belum memiliki akun? <a className='masuk' href=''>Daftar sekarang</a></p>
+        <p>Belum memiliki akun? <a className='masuk' href='/Daftarlogin'>Daftar sekarang</a></p>
         <button className='button' type="submit">Masuk</button>
         </form>
 
