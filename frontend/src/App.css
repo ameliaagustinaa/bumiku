@@ -64,7 +64,8 @@
   border-radius: 25px;
 }
 .inputlogin {
-  padding-right: 290px;
+  width: 330px;
+  padding-right: 5px;
 }
 
 .masuk {
