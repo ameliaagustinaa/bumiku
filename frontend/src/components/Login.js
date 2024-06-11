@@ -1,68 +1,52 @@
+
 import React, { useState } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import Form from 'react-bootstrap/Form';
+import axios from 'axios';
+
 import "../App.css";
 
 function Login() {
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [confPassword, setConfPassword] = useState('');
   const navigate = useNavigate();
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:5000/login', {
-        email,
-        password
-      });
-      if (response.status === 200) {
-        // Navigasi ke halaman informasi setelah login berhasil
-        navigate('/informasi');
+  const [msg, setMsg] = useState('');
+  const Auth = async (e) => {
+    e.preverntDefault();
+    try{
+      await axios.post('http://localhost:5000/login', {
+        email: email,
+        password: password
+      })
+      navigate.push("/Login");
+    }catch(error){
+      if(error.response){
+        msg(error.response.data.msg);
       }
-    } catch (error) {
-      setError('Login gagal. Periksa email dan kata sandi Anda.');
     }
-  };
-
+  }
   return (
     <div className="App-daftarlogin">
       <div className='containerss'>
         <h1 className='judulbumiku'>Bumiku.com</h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={Auth}>
           <label>
-            Email: <br />
-            <input 
-              className='inputlogin' 
-              type="email" 
-              value={email} 
-              onChange={handleEmailChange}
-            />
+            Email: <br></br>
+            <input className='inputlogin' type="email" 
+            value={email} onChange={(e) => setEmail(e.target.value)}/>
           </label>
-          <br />
+          <br></br>
           <label>
-            Kata Sandi: <br />
-            <input 
-              className='inputlogin' 
-              type="password" 
-              value={password} 
-              onChange={handlePasswordChange}
-            />
+            Kata Sandi: <br></br>
+            <input className='inputlogin' type="text" 
+            value={password} onChange={(e) => setPassword(e.target.value)}/>
           </label>
-          <br />
-          {error && <p style={{color: 'red'}}>{error}</p>}
-          <p>Belum memiliki akun? <a className='masuk' href='/Daftarlogin'>Daftar sekarang</a></p>
+          <br></br>
+          <p>Belum memiliki akun? <a className='masuk' href=''>Daftar sekarang</a></p>
           <button className='button' type="submit">Masuk</button>
         </form>
+
       </div>
     </div>
   );
