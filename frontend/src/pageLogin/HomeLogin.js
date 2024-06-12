@@ -1,6 +1,6 @@
 import "../App.css";
 import "../App.scss";
-import { NavBarLogin } from "../components/NavBarLogin";
+import { NavBarLogin } from "./NavBarLogin";
 import { Footer } from "../components/Footer";
 import { Hero } from "../components/Hero";
 import { HomeCard } from "../components/HomeCard";

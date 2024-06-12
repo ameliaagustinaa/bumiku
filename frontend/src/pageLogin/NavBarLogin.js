@@ -16,24 +16,24 @@ export const NavBarLogin = () => {
   return (
     <Navbar expand="lg" className="bg-transparent">
       <Container className="navbar">
-        <Navbar.Brand href="#home" id="navbar-logo">
+        <Navbar.Brand href="/BerandaLogin" id="navbar-logo">
           Bumiku.com
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto navbar-link">
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/BerandaLogin">
               Beranda
             </Nav.Link>
-            <Nav.Link as={Link} to="/informasi">
+            <Nav.Link as={Link} to="/informasiLogin">
               Informasi
             </Nav.Link>
             {isLoggedIn && (
               <>
-                <Nav.Link as={Link} to="/kursus">
+                <Nav.Link as={Link} to="/kursusLogin">
                   Kursus
                 </Nav.Link>
-                <Nav.Link as={Link} to="/donasi">
+                <Nav.Link as={Link} to="/donasiLogin">
                   Donasi
                 </Nav.Link>
               </>

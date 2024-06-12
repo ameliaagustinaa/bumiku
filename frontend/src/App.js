@@ -15,8 +15,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./page/Home";
-import HomeLogin from "./page/HomeLogin";
+import HomeLogin from "./pageLogin/HomeLogin";
+import KursusLogin from "./pageLogin/KursusLogin";
+import InformasiLogin from "./pageLogin/InformasiLogin";
 import About from "./page/About";
+import Footer from "./components/Footer";
+import FooterLogin from "./pageLogin/FooterLogin";
+import AboutLogin from "./pageLogin/AboutLogin";
 import Info from "./page/Info";
 import Daftarlogin from "./components/Daftarlogin";
 import Login from "./components/Login";
@@ -27,6 +32,7 @@ import Tambahinformasi from "./components/Tambahinformasi";
 import Tambahkursus from "./components/Tambahkursus";
 import Informasi from "./page/informasi";
 import Donasi from "./page/Donasi";
+import DonasiLogin from "./pageLogin/DonasiLogin";
 import Detail from "./page/InformasiDetail";
 import DonasiDetail from "./page/DonasiDetail";
 import KursusDetail from "./page/KursusDetail";
@@ -40,9 +46,14 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/beranda" element={<Home />} />
           <Route path="/BerandaLogin" element={<HomeLogin />} />
+          <Route path="/KursusLogin" element={<KursusLogin />} />
+          <Route path="/InformasiLogin" element={<InformasiLogin />} />
           <Route path="/tentang-kami" element={<About />} />
+          <Route path="/tentang-kami-login" element={<AboutLogin />} />
           <Route path="/bantuan" element={<Info />} />
           <Route path="/Login" element={<Login/>}/>
+          <Route path="/Footer" element={<Footer/>}/>
+          <Route path="/FooterLogin" element={<FooterLogin/>}/>
           <Route path="/Daftarlogin" element={<Daftarlogin/>}/>
           <Route path="/Admininformasi" element={<Admininformasi/>}/>
           <Route path="/Adminkursus" element={<Adminkursus/>}/>
@@ -51,6 +62,7 @@ function App() {
           <Route path="/Tambahkursus" element={<Tambahkursus/>}/>
           <Route path="/informasi" element={<Informasi />} />
           <Route path="/donasi" element={<Donasi />} />
+          <Route path="/donasiLogin" element={<DonasiLogin />} />
           <Route path="/kursus" element={<Kursus />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/detail-donasi" element={<DonasiDetail />} />
