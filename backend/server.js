@@ -32,19 +32,19 @@ app.post('/add_user', (req, res) => {
     });
 });
 
-app.post('/login', (req, res) => {
-    const { email, password } = req.body;
-    const sql = "SELECT * FROM users WHERE email = ? AND password = ?";
-    const values = [email, password];
+app.post('/tambah_informasi', (req, res) => {
+    const sql = "INSERT INTO tambah_informasi (judul, deskripsi, konten_informasi) VALUES (?, ?, ?)";
+    const values = [
+        req.body.judul,
+        req.body.deskripsi,
+        req.body.konten_informasi
+    ];
     db.query(sql, values, (err, result) => {
-        if (err) return res.status(500).json({ message: 'Internal server error' });
-        if (result.length === 0) {
-            return res.status(401).json({ message: 'Email or password is incorrect' });
-        } else {
-            return res.status(200).json({ message: 'Login successful' });
-        }
+        if (err) return res.json({ message: 'Something unexpected has occurred' + err });
+        return res.json({ success: "Informasi added successfully" });
     });
 });
+
 
 
 app.get('/users', (req, res) => {
