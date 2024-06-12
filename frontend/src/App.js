@@ -35,6 +35,7 @@ import Donasi from "./page/Donasi";
 import DonasiLogin from "./pageLogin/DonasiLogin";
 import Detail from "./page/InformasiDetail";
 import DonasiDetail from "./page/DonasiDetail";
+import DonasiDetailLogin from "./pageLogin/DonasiDetailLogin";
 import KursusDetail from "./page/KursusDetail";
 import Kursus from "./page/Kursus";
 
@@ -66,6 +67,7 @@ function App() {
           <Route path="/kursus" element={<Kursus />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/detail-donasi" element={<DonasiDetail />} />
+          <Route path="/detail-donasi-login" element={<DonasiDetailLogin />} />
           <Route path="/detail-kursus" element={<KursusDetail />} />
         </Routes>
       </BrowserRouter>        
