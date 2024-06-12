@@ -32,6 +32,19 @@ app.post('/add_user', (req, res) => {
     });
 });
 
+app.post('/login', (req, res) => {
+    const { email, password } = req.body;
+    const sql = "SELECT * FROM users WHERE email = ? AND password = ?";
+    db.query(sql, [email, password], (err, result) => {
+        if (err) return res.json({ message: 'Internal server error' + err });
+        if (result.length > 0) {
+            return res.json({ success: "Login successful", user: result[0] });
+        } else {
+            return res.json({ message: 'Invalid email or password' });
+        }
+    });
+});
+
 app.post('/tambah_informasi', (req, res) => {
     const sql = "INSERT INTO tambah_informasi (judul, deskripsi, konten_informasi) VALUES (?, ?, ?)";
     const values = [

@@ -62,29 +62,27 @@
   padding-left: 35px;
   padding-right: 35px;
   border-radius: 25px;
+  
+  
 }
-.inputlogin {
-  padding-right: 20px;
-}
-
 .masuk {
   text-decoration: none;
   font-weight: bold;
   color: #03361E;
 }
-.judulbumiku {
+.judul {
   text-align: center;
   color: #03361E;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
-  font-weight: bold;
 }
 .button {
   text-align: center;
   background-color: #03361E;
   color: white;
-  width: 302px;
+  width: 250px;
   border-radius: 50px;
+
   
 }
 input {
@@ -138,8 +136,6 @@ label {
 }
 .flex-column {
   text-align: left;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
 }
 
 /* tabel */
@@ -147,7 +143,7 @@ label {
   padding-left: 70px;
   padding-top: 110px; 
   font-family: "Poppins", sans-serif;
- width: 80%;
+ 
 }
 
 .butonadmin {
@@ -156,7 +152,7 @@ label {
   color: white;
   width: 100px;
   border-radius: 50px;
-  margin-left: 1060px;
+  margin-left: 750px;
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   padding-top: 7px;
@@ -168,23 +164,10 @@ label {
 }
 th {
   font-size: 12px;
-  
 }
 td {
   font-size: 12px;
   text-align: left;
-}
-
-.aksi {
-  color: red;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  gap: 15px ;
-}
-Nav svg {
-  font-size: 1rem;
-  margin: 5px;
-  gap: 2px ;
 }
 
 /* Menambahkan informasi */
@@ -201,21 +184,12 @@ Nav svg {
 }
 
 .konten {
-  height: 140px;
+  padding-top: 140px;
   border-radius: 10px;
-  width: 400px;
-  margin: 30px auto;
-  justify-content: top;
-  text-align: start;
-  padding: 5px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  resize: vertical;
+  padding-right: 400px;
 }
 .inputtambah {
-  width: 410px;
-  padding-right: 10px;
+  padding-right: 400px;
 }
 .buttonn {
   text-align: center;
@@ -239,7 +213,6 @@ Nav svg {
 .texttambah {
   text-align: left;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
 }
 
 .uploudgambar {

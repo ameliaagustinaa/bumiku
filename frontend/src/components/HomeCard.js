@@ -16,10 +16,10 @@ export const HomeCard = () => {
             <Col md={4}>
               <img src={card1} />
               <p className="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              Kebersihan lingkungan adalah cerminan dari cinta dan tanggung jawab 
+              kita terhadap bumi. Dalam setiap helai rumput yang hijau dan setiap tetes air 
+              yang jernih, tersimpan harapan untuk masa depan yang lebih bersih dan lestari, 
+              bebas dari pencemaran yang merusak keindahan dan kehidupan
               </p>
             </Col>
             <Col md={4}>
