@@ -1,6 +1,6 @@
 import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
-import { Cards } from "../components/Cards";
+import { Cards } from "../components/CardKursus";
 import { TabNav } from "../components/TabNav";
 import { Breadcrumb } from "../components/Breadcrumb";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -68,13 +68,7 @@ export default function Kursus() {
         <Row className="text-start card-custom m-0 d-flex justify-content-between">
           {posts.map((v) => {
             console.log(v);
-            return (
-              <Cards
-                title={v.title}
-                subTitle={v.subTitle}
-                description={v.description}
-              />
-            );
+            return <Cards title={v.title} subTitle={v.subTitle} description={v.description} />;
           })}
         </Row>
       </Container>

@@ -6,7 +6,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Cards = ({ title, subTitle, description }) => {
   return (
-    <Col md={3} className="p-0 mb-4 ">
+    <Col md={4} className="p-0 mb-4 ">
       <Link className="text-decoration-none">
         <Card className="card-custom-item">
           <div>
@@ -21,7 +21,7 @@ export const Cards = ({ title, subTitle, description }) => {
             {subTitle != "" ? <h3 className="text">{subTitle}</h3> : ""}
             <p className="text">{description ?? ""}</p>
             <div className="text-end mx-3">
-              <Link to={"/detail"}>
+              <Link to={"/detail-kursus"}>
                 <FontAwesomeIcon
                   icon={faArrowRight}
                   color="#204D38"

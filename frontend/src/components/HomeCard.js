@@ -16,28 +16,26 @@ export const HomeCard = () => {
             <Col md={4}>
               <img src={card1} />
               <p className="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              Kebersihan lingkungan adalah cerminan dari cinta dan tanggung jawab kita terhadap bumi. 
+              Dalam setiap helai rumput yang hijau dan setiap tetes air yang jernih, 
+              tersimpan harapan untuk masa depan yang lebih bersih dan lestari, 
+              bebas dari pencemaran yang merusak keindahan dan kehidupan.
               </p>
             </Col>
             <Col md={4}>
               <img src={card2} />
               <p className="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              Setiap langkah kecil yang kita ambil dapat memberikan dampak besar bila dilakukan bersama-sama. 
+              Dengan berkomitmen untuk menjaga dan merawat bumi, 
+              kita memastikan bahwa generasi mendatang dapat menikmati lingkungan yang sehat dan lestari.
               </p>
             </Col>
             <Col md={4}>
               <img src={card3} />
               <p className="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+              Menjaga kebersihan lingkungan dari pencemaran adalah bentuk kasih sayang kita terhadap alam. 
+              Setiap upaya kecil untuk menjaga kebersihan adalah langkah besar menuju masa depan yang lebih hijau dan indah, 
+              di mana udara segar dan air jernih menjadi warisan bagi generasi mendatang.
               </p>
             </Col>
           </Row>

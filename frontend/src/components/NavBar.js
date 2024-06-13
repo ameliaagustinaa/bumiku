@@ -41,14 +41,13 @@ export const NavBar = () => {
           </Nav>
           <div className="navbar-button">
             {isLoggedIn ? (
-              <Button
-                variant="dark"
-                className="rounded-pill"
-                id="button"
-                onClick={handleLogout}
-              >
-                Logout
-              </Button>
+              <Link
+              className="text-decoration-none"
+              style={{ color: "#03361e" }}
+              onClick={handleLogout}
+            >
+              Hi, Jane Doe
+            </Link>
             ) : (
               <>
                 <Button

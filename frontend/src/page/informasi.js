@@ -1,6 +1,6 @@
 import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer";
-import { Cards } from "../components/Cards";
+import { Cards } from "../components/CardInformasi";
 import { TabNav } from "../components/TabNav";
 import { Breadcrumb } from "../components/Breadcrumb";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
