@@ -39,20 +39,19 @@
   }
 }
 
-
 /* daftar login */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.App-daftarlogin  {
+.App-daftarlogin {
   background-color: #d9d9d9;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items:center ;
+  align-items: center;
   text-align: left;
 }
 .containerss {
@@ -64,28 +63,28 @@
   border-radius: 25px;
 }
 .inputlogin {
-  padding-right: 290px;
+  width: 290px;
+  
 }
 
 .masuk {
   text-decoration: none;
   font-weight: bold;
-  color: #03361E;
+  color: #03361e;
 }
 .judulbumiku {
   text-align: center;
-  color: #03361E;
+  color: #03361e;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
 .button {
   text-align: center;
-  background-color: #03361E;
+  background-color: #03361e;
   color: white;
   width: 302px;
   border-radius: 50px;
-  
 }
 input {
   width: 250px;
@@ -95,9 +94,9 @@ input {
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 50px;
-  border-color: #DEF5D8;
+  border-color: #def5d8;
 }
-label { 
+label {
   margin-bottom: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -105,29 +104,23 @@ label {
 
 /* ADMIN */
 .frameadmin {
-  background-color:white;
+  background-color: white;
   width: 100%;
   height: 100vh;
   display: flex;
-  
 }
 
 .sidebar {
-      width: 250px;
-      height: 100vh;
-      background-color: #03361E;
-      padding-top: 45px;
-      font-family: "Poppins", sans-serif;
-      
-      
-
+  width: 250px;
+  height: 100vh;
+  background-color: #03361e;
+  padding-top: 45px;
+  font-family: "Poppins", sans-serif;
 }
 .judul-sidebar {
-  color: #A8DB98;
+  color: #a8db98;
   padding-left: 15px;
   text-align: left;
-  
-  
 }
 .page-sidebar {
   color: white;
@@ -145,14 +138,14 @@ label {
 /* tabel */
 .tabel {
   padding-left: 70px;
-  padding-top: 110px; 
+  padding-top: 110px;
   font-family: "Poppins", sans-serif;
- width: 80%;
+  width: 80%;
 }
 
 .butonadmin {
   text-align: center;
-  background-color: #03361E;
+  background-color: #03361e;
   color: white;
   width: 100px;
   border-radius: 50px;
@@ -162,13 +155,12 @@ label {
   padding-top: 7px;
   padding-bottom: 7px;
 }
-.informasiadmin{
+.informasiadmin {
   text-align: left;
   font-weight: bold;
 }
 th {
   font-size: 12px;
-  
 }
 td {
   font-size: 12px;
@@ -179,12 +171,12 @@ td {
   color: red;
   font-family: "Poppins", sans-serif;
   display: flex;
-  gap: 15px ;
+  gap: 15px;
 }
 Nav svg {
   font-size: 1rem;
   margin: 5px;
-  gap: 2px ;
+  gap: 2px;
 }
 
 /* Menambahkan informasi */
@@ -196,30 +188,19 @@ Nav svg {
   padding-right: 50px;
   border-radius: 25px;
   font-size: 15px;
-  
-  
 }
 
 .konten {
-  height: 140px;
+  padding-top: 140px;
   border-radius: 10px;
   width: 400px;
-  margin: 30px auto;
-  justify-content: top;
-  text-align: start;
-  padding: 5px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  resize: vertical;
 }
 .inputtambah {
-  width: 410px;
-  padding-right: 10px;
+  width: 400px;
 }
 .buttonn {
   text-align: center;
-  background-color: #03361E;
+  background-color: #03361e;
   color: white;
   width: 100px;
   border-radius: 50px;
@@ -243,8 +224,7 @@ Nav svg {
 }
 
 .uploudgambar {
-  
   font-weight: bold;
-  color: #03361E;
+  color: #03361e;
   text-align: left;
 }

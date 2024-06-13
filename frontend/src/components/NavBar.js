@@ -54,6 +54,7 @@ export const NavBar = () => {
                 <Button
                   className="rounded-pill outline-primary"
                   id="button1"
+                  as={Link} to="/Daftarlogin"
                   onClick={handleLogin}
                 >
                   Daftar
@@ -62,6 +63,7 @@ export const NavBar = () => {
                   variant="dark"
                   className="rounded-pill"
                   id="button"
+                  as={Link} to="/Login"
                   onClick={handleLogin}
                 >
                   Masuk
