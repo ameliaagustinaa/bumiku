@@ -62,27 +62,48 @@
   padding-left: 35px;
   padding-right: 35px;
   border-radius: 25px;
+<<<<<<< HEAD
   
   
 }
+=======
+}
+.inputlogin {
+  padding-right: 290px;
+}
+
+>>>>>>> 0c67e8ea1354c9c50519a4f5ba9e687e7a6df1af
 .masuk {
   text-decoration: none;
   font-weight: bold;
   color: #03361E;
 }
+<<<<<<< HEAD
 .judul {
+=======
+.judulbumiku {
+>>>>>>> 0c67e8ea1354c9c50519a4f5ba9e687e7a6df1af
   text-align: center;
   color: #03361E;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
+<<<<<<< HEAD
+=======
+  font-weight: bold;
+>>>>>>> 0c67e8ea1354c9c50519a4f5ba9e687e7a6df1af
 }
 .button {
   text-align: center;
   background-color: #03361E;
   color: white;
+<<<<<<< HEAD
   width: 250px;
   border-radius: 50px;
 
+=======
+  width: 302px;
+  border-radius: 50px;
+>>>>>>> 0c67e8ea1354c9c50519a4f5ba9e687e7a6df1af
   
 }
 input {
@@ -136,6 +157,11 @@ label {
 }
 .flex-column {
   text-align: left;
+<<<<<<< HEAD
+=======
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+>>>>>>> 0c67e8ea1354c9c50519a4f5ba9e687e7a6df1af
 }
 
 /* tabel */
@@ -213,6 +239,10 @@ td {
 .texttambah {
   text-align: left;
   font-size: 15px;
+<<<<<<< HEAD
+=======
+  font-family: "Poppins", sans-serif;
+>>>>>>> 0c67e8ea1354c9c50519a4f5ba9e687e7a6df1af
 }
 
 .uploudgambar {
