@@ -1,11 +1,11 @@
 // File: src/components/Admindonasi.js
 
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Nav from 'react-bootstrap/Nav';
-import Table from 'react-bootstrap/Table';
-import { RiDeleteBin6Fill } from 'react-icons/ri';
-import { MdEditSquare } from 'react-icons/md';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Nav from "react-bootstrap/Nav";
+import Table from "react-bootstrap/Table";
+import { RiDeleteBin6Fill } from "react-icons/ri";
+import { MdEditSquare } from "react-icons/md";
 import "../App.css";
 
 const Admindonasi = () => {
@@ -15,16 +15,24 @@ const Admindonasi = () => {
     // Mengambil data donasi dari API
     const fetchDonations = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/products', {
-          auth: {
-            email: 'admin@gmail.com',
-            password: '123456'
-        },
+        const response = await fetch("http://localhost:5000/products", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
         });
-        // console.log(res.locals.user);
-        setDonations(response.data);
+    
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+    
+        const data = await response.json();
+        console.log(data);
+    
+        // Assuming setDonations is a function to set state
+        setDonations(data);
       } catch (error) {
-        console.error('Error fetching donations:', error);
+        console.error("Error fetching donations:", error);
       }
     };
 
@@ -32,20 +40,26 @@ const Admindonasi = () => {
   }, []);
 
   return (
-    <div className='frameadmin'>
-      <div className='sidebar'>
-        <h2 className='judul-sidebar'>Bumiku.com</h2>
-        <p className='page-sidebar'>AdminPage</p>
+    <div className="frameadmin">
+      <div className="sidebar">
+        <h2 className="judul-sidebar">Bumiku.com</h2>
+        <p className="page-sidebar">AdminPage</p>
         <br />
         <Nav defaultActiveKey="/home" className="flex-column">
-          <Nav.Link href="/Admininformasi" style={{ color: 'white' }}>Informasi</Nav.Link>
-          <Nav.Link href="/Adminkursus" style={{ color: 'white' }}>Kursus</Nav.Link>
-          <Nav.Link href="/Admindonasi" style={{ color: 'white' }}>Donasi</Nav.Link>
+          <Nav.Link href="/Admininformasi" style={{ color: "white" }}>
+            Informasi
+          </Nav.Link>
+          <Nav.Link href="/Adminkursus" style={{ color: "white" }}>
+            Kursus
+          </Nav.Link>
+          <Nav.Link href="/Admindonasi" style={{ color: "white" }}>
+            Donasi
+          </Nav.Link>
         </Nav>
       </div>
 
-      <div className='tabel'>
-        <h6 className='informasiadmin'>Donasi</h6>
+      <div className="tabel">
+        <h6 className="informasiadmin">Donasi</h6>
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -60,16 +74,18 @@ const Admindonasi = () => {
             {donations.map((donation) => (
               <tr key={donation.uuid}>
                 <td>{donation.name}</td>
-                <td>{donation.imageUrl}</td>
+                <img src={donation.imageUrl} className="w-50 h-50"></img>
                 <td>Rp {donation.price.toLocaleString()}</td>
                 <td>{donation.payment_status}</td>
                 <td>
-                  <nav className='aksi'>
-                    <Nav.Link href='#' onClick={() => handleDelete(donation.uuid)}>
-                      <RiDeleteBin6Fill />Hapus
+                  <nav className="aksi">
+                    <Nav.Link href="#" onClick={() => handleDelete(donation.uuid)}>
+                      <RiDeleteBin6Fill />
+                      Hapus
                     </Nav.Link>
-                    <Nav.Link href='#' style={{ color: 'black' }} onClick={() => handleConfirm(donation.id)}>
-                      <MdEditSquare />Konfirmasi
+                    <Nav.Link href="#" style={{ color: "black" }} onClick={() => handleConfirm(donation.id)}>
+                      <MdEditSquare />
+                      Konfirmasi
                     </Nav.Link>
                   </nav>
                 </td>

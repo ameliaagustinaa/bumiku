@@ -1,7 +1,7 @@
 import "../App.css";
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
+import { useNavigate, Link, json } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState(""); // State untuk menyimpan email
@@ -24,23 +24,26 @@ function Login() {
       const jsonData = await response.json();
       if (response.ok) {
         // Login berhasil
-        // Simpan token atau data user ke local storage\
         console.log("Login berhasil:", jsonData);
-        if (jsonData.role === "admin") {
-          // the variable is defined
+        const { data, token } = jsonData;
+        console.log(JSON.stringify(data));
+        localStorage.setItem("userData", JSON.stringify(data));
+        Cookies.set("token", JSON.stringify(token));
+        if (data.role === "admin") {
           // Redirect ke halaman admin donasi
           navigate("/Admininformasi");
         } else {
-          // Redirek ke halaman dashboard atau profil
+          // Redirect ke halaman dashboard atau profil
           navigate("/");
         }
       } else {
         // Login gagal
         console.error("Login gagal:", jsonData);
-        setState(jsonData.msg);
+        setState(jsonData.msg || "Login gagal");
       }
     } catch (error) {
       console.error("Terjadi kesalahan:", error);
+      setState("Terjadi kesalahan saat mencoba login");
     }
   };
 
@@ -51,20 +54,20 @@ function Login() {
         <h6>{state}</h6>
         <form onSubmit={handleSubmit}>
           <label>
-            Email: <br></br>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            Email: <br />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           </label>
-          <br></br>
+          <br />
           <label>
-            Kata Sandi: <br></br>
-            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+            Kata Sandi: <br />
+            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
           </label>
-          <br></br>
+          <br />
           <p>
             Belum memiliki akun?{" "}
-            <a className="masuk" href="/Daftarlogin">
+            <Link className="masuk" to="/Daftarlogin">
               Daftar sekarang
-            </a>
+            </Link>
           </p>
           <button className="button" type="submit">
             Masuk

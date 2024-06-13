@@ -6,7 +6,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Cards = ({ title, subTitle, description }) => {
   return (
-    <Col md={4} className="p-0 mb-4 ">
+    <Col md={4} className="p-0 mb-4">
       <Link className="text-decoration-none">
         <Card className="card-custom-item">
           <div>

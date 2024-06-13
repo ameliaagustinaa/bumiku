@@ -1,5 +1,7 @@
+import { json } from "sequelize";
 import User from "../models/UserModel.js";
 import argon2 from "argon2";
+import jwt from "jsonwebtoken";
 
 export const Login = async (req, res) => {
   const user = await User.findOne({
@@ -11,11 +13,15 @@ export const Login = async (req, res) => {
   const match = await argon2.verify(user.password, req.body.password);
   if (!match) return res.status(400).json({ msg: "Wrong Password" });
   req.session.userId = user.uuid;
-  const uuid = user.uuid;
-  const name = user.name;
-  const email = user.email;
-  const role = user.role;
-  res.status(200).json({ uuid, name, email, role });
+  const data = {
+    uuid: user.uuid,
+    name: user.name,
+    email: user.email,
+    role: user.role,
+  };
+
+  const token = jwt.sign({ data }, "bumiku", { expiresIn: "1h" });
+  res.status(200).json({ token, data });
 };
 
 export const Me = async (req, res) => {
@@ -29,6 +35,7 @@ export const Me = async (req, res) => {
     },
   });
   if (!user) return res.status(404).json({ msg: "User tidak ditemukan" });
+  console.log(json(user));
   res.status(200).json(user);
 };
 

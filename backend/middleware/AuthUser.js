@@ -25,4 +25,3 @@ export const adminOnly = async (req, res, next) => {
   if (user.role !== "admin") return res.status(403).json({ msg: "Akses terlarang" });
   next();
 };
-
