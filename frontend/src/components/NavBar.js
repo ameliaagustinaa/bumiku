@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar, Nav, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    const userData = localStorage.getItem("userData");
+    if (userData) {
+      const parsedUser = JSON.parse(userData);
+      setName(parsedUser.name);
+      setIsLoggedIn(true);
+    }
+  });
 
   const handleLogin = () => {
     setIsLoggedIn(true);
@@ -11,6 +21,7 @@ export const NavBar = () => {
 
   const handleLogout = () => {
     setIsLoggedIn(false);
+    localStorage.removeItem("userData");
   };
 
   return (
@@ -41,31 +52,15 @@ export const NavBar = () => {
           </Nav>
           <div className="navbar-button">
             {isLoggedIn ? (
-              <Button
-                variant="dark"
-                className="rounded-pill"
-                id="button"
-                onClick={handleLogout}
-              >
-                Logout
-              </Button>
+              <Link className="text-decoration-none" style={{ color: "#03361e" }} onClick={handleLogout}>
+                {name}
+              </Link>
             ) : (
               <>
-                <Button
-                  className="rounded-pill outline-primary"
-                  id="button1"
-                  as={Link} to="/Daftarlogin"
-                  onClick={handleLogin}
-                >
+                <Button className="rounded-pill outline-primary" id="button1" as={Link} to="/Daftarlogin" onClick={handleLogin}>
                   Daftar
                 </Button>
-                <Button
-                  variant="dark"
-                  className="rounded-pill"
-                  id="button"
-                  as={Link} to="/Login"
-                  onClick={handleLogin}
-                >
+                <Button variant="dark" className="rounded-pill" id="button" as={Link} to="/Login" onClick={handleLogin}>
                   Masuk
                 </Button>
               </>

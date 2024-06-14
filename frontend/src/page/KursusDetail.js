@@ -25,9 +25,7 @@ export default function KursusDetail() {
           <Col md={10} className="text-start detail-heading">
             <h5>Kreasi Daur Ulang Sampah Botol Plastik </h5>
             <h6 style={{ fontSize: "14px" }}>Nusantara</h6>
-            <h6 style={{ fontSize: "14px" }}>
-              1,6 jt x ditonton . 5 hari yang lalu
-            </h6>
+            <h6 style={{ fontSize: "14px" }}>1,6 jt x ditonton . 5 hari yang lalu</h6>
           </Col>
         </Row>
       </Container>

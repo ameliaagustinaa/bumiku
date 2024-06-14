@@ -9,17 +9,10 @@ export const AboutBumiku = () => {
           <Col md={6} className="text-start m-auto p-5">
             <h4>Bumiku.com</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Bumiku.com adalah sebuah platform inovatif yang bertujuan untuk mengurangi pencemaran lingkungan melalui edukasi, kolaborasi, dan aksi nyata. Situs ini menyediakan informasi terkini tentang isu-isu lingkungan, menawarkan
+              solusi praktis untuk mengurangi jejak karbon, dan mengajak komunitas global untuk berpartisipasi dalam inisiatif ramah lingkungan. Dengan fitur interaktif seperti forum diskusi, program daur ulang, dan kampanye kebersihan,
+              Bumiku.com berkomitmen untuk menciptakan bumi yang lebih bersih dan sehat bagi generasi mendatang. Melalui kerjasama dengan berbagai organisasi dan individu yang peduli lingkungan, Bumiku.com menjadi pusat informasi dan aksi
+              bagi mereka yang ingin berkontribusi dalam menjaga kelestarian planet kita.
             </p>
             <span className="text-end">
               <h5>-Nusantara</h5>

@@ -35,15 +35,9 @@ export default function DonasiDetail() {
               backgroundColor: "#DEF5D8",
             }}
           >
-            <h5>
-              Terimakasih telah mempercayai kami untuk menyalurkan kontribusi
-              baik kamu untuk alam!
-            </h5>
+            <h5>Terimakasih telah mempercayai kami untuk menyalurkan kontribusi baik kamu untuk alam!</h5>
             <p style={{ color: "#03361E" }}>
-              Kami sangat menghargai niat baik Anda untuk membantu menjaga
-              kelestarian alam. Untuk menyelesaikan proses donasi, mohon segera
-              lakukan pembayaran melalui beberapa langkah berikut, dan
-              konfirmasi pembayaranmu.
+              Kami sangat menghargai niat baik Anda untuk membantu menjaga kelestarian alam. Untuk menyelesaikan proses donasi, mohon segera lakukan pembayaran melalui beberapa langkah berikut, dan konfirmasi pembayaranmu.
             </p>
             <Container className="d-flex detail-donasi align-items-center">
               <Col md={3}>
@@ -53,18 +47,13 @@ export default function DonasiDetail() {
                 <ul>
                   <li>Buka Aplikasi Gojek dan klik "Bayar".</li>
                   <li>Scan Kode QR berikut.</li>
-                  <li>
-                    Masukkan nominal transaksi/pastikan nominal transaksi sudah
-                    sesuai.
-                  </li>
+                  <li>Masukkan nominal transaksi/pastikan nominal transaksi sudah sesuai.</li>
                   <li>Klik "Konfirmasi & Bayar".</li>
                   <li>Masukkan PIN GoPay kamu.</li>
                   <li>Pembayaran berhasil.</li>
                 </ul>
                 <span className="p-4">
-                  <Link style={{ color: "#03361E", fontWeight: "600" }}>
-                    Unggah bukti transfer
-                  </Link>
+                  <Link style={{ color: "#03361E", fontWeight: "600" }}>Unggah bukti transfer</Link>
                 </span>
               </Col>
             </Container>
@@ -82,15 +71,8 @@ export default function DonasiDetail() {
               <p>Melestarikan satwa liat dan habitatnya</p>
             </span>
             <span className="d-flex">
-              <img
-                src={air}
-                width="20"
-                height="20"
-                style={{ marginTop: "6px" }}
-              />
-              <p>
-                Mewujudkan perairan yang bersih dan bebas dari sampah plastik
-              </p>
+              <img src={air} width="20" height="20" style={{ marginTop: "6px" }} />
+              <p>Mewujudkan perairan yang bersih dan bebas dari sampah plastik</p>
             </span>
             <span className="d-flex">
               <img src={hutan} width="20" height="20" />

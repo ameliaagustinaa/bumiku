@@ -1,14 +1,34 @@
-import multer from "multer";
+// const multer = require('multer');
 
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "uploads/"); // Folder penyimpanan sementara file
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname); // Nama file disimpan sesuai dengan nama aslinya
-  },
-});
+// // Set storage engine
+// const storage = multer.diskStorage({
+//   destination: './uploads/',
+//   filename: function (req, file, cb) {
+//     cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
+//   },
+// });
 
-const upload = multer({ storage: storage });
+// // Initialize upload variable
+// const upload = multer({
+//   storage: storage,
+//   limits: { fileSize: 1000000 }, // Limit file size to 1MB
+//   fileFilter: function (req, file, cb) {
+//     checkFileType(file, cb);
+//   },
+// }).single('file'); // Ensure this matches the field name in your form data
 
-export default upload;
+// // Check file type function
+// function checkFileType(file, cb) {
+//   // Allowed file extensions
+//   const filetypes = /jpeg|jpg|png|gif/;
+//   // Check file extension
+//   const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+//   // Check mime type
+//   const mimetype = filetypes.test(file.mimetype);
+
+//   if (mimetype && extname) {
+//     return cb(null, true);
+//   } else {
+//     cb('Error: Images Only!');
+//   }
+// }
